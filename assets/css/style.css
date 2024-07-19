@@ -12,7 +12,7 @@
 body {
   background: #000;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   overflow-x: hidden;
 }
 /* form{
@@ -41,12 +41,12 @@ body {
 .form-section h3 {
   color: #ffd700;
   font-size: 1.7rem;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .form-group label {
-  color: #ff8c00;
-  font-family: "Open Sans", sans-serif;
+  color: #ffd700;
+  font-family: "Montserrat", sans-serif !important;
 }
 label.form-control-label.px-3 {
   text-align: start;
@@ -134,7 +134,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -203,7 +203,7 @@ h6 {
   padding: 0;
   margin: 0;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -252,7 +252,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   color: #c9a329;
   font-size: 15px;
   padding: 0 2px;
@@ -548,17 +548,17 @@ h6 {
   margin-top: 7rem;
 }
 
-@media only screen and (max-width: 780px) {
+/* @media only screen and (max-width: 780px) {
   .hero-section {
     margin-top: 14rem !important;
   }
-}
+} */
 
-@media only screen and (min-width: 1440px) {
+/* @media only screen and (min-width: 1440px) {
   .hero-section {
     margin-top: 12rem;
   }
-}
+} */
 
 @media only screen and (max-width: 1030px) and (min-width: 760px) {
   .list-unstyled {
@@ -686,7 +686,7 @@ section {
 /* Section with background
 --------------------------------*/
 .section-bg {
-  background: #000;
+  background-color: #304faf;
 }
 
 /*--------------------------------------------------------------
@@ -880,7 +880,7 @@ section {
 /* Product Featuress Section
 --------------------------------*/
 #features {
-  background: #000000;
+  background: #304faf;
   padding: 60px 0 0 0;
   overflow: hidden;
   padding-bottom: 5rem;
@@ -1232,7 +1232,7 @@ section {
 --------------------------------*/
 #clients {
   padding: 30px 0;
-  background: #000;
+  background: #7688bb;
   overflow: hidden;
 }
 
@@ -1679,7 +1679,7 @@ section#contact {
 
 .count-text {
   font-size: 13px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: normal;
   margin-top: 10px;
   margin-bottom: 0;
@@ -1750,7 +1750,7 @@ section#contact {
 }
 .testimonial .description:before {
   content: "\f10d";
-  font-family: fontawesome;
+  font-family: "Montserrat", sans-serif !important;
   position: absolute;
   top: 0;
   left: 10px;
@@ -1759,7 +1759,7 @@ section#contact {
 }
 .testimonial .description:after {
   content: "\f10e";
-  font-family: fontawesome;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 20px;
   color: #d0ab6d;
   position: absolute;
@@ -1813,4 +1813,143 @@ section#contact {
 
 .owl-carousel {
   width: 90vw !important;
+}
+
+.Click-here {
+  cursor: pointer;
+  background-image: linear-gradient(190deg, #ffffff 0%, #0000ff 100%);
+  color: #fff;
+  width: 170px;
+  text-align: center;
+  font-size: 16px;
+  padding: 18px 0;
+  margin: 0 auto;
+  transition: background-image 3s ease-in-out;
+  margin-top: 12rem;
+  border-radius: 34px;
+}
+.Click-here:hover {
+  transition: background-image 3s ease-in-out;
+  background-image: linear-gradient(90deg, #fee140 0%, #f83600 100%);
+}
+.custom-model-main {
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* z-index: 1050; */
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear, z-index 0.15;
+  -o-transition: opacity 0.15s linear, z-index 0.15;
+  transition: opacity 0.15s linear, z-index 0.15;
+  z-index: -1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.model-open {
+  z-index: 99999;
+  opacity: 1;
+  overflow: hidden;
+}
+.custom-model-inner {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  display: inline-block;
+  vertical-align: middle;
+  width: 600px;
+  margin: 30px auto;
+  max-width: 97%;
+}
+.custom-model-wrap {
+  display: block;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+  text-align: left;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+.model-open .custom-model-inner {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  position: relative;
+  z-index: 999;
+}
+.model-open .bg-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+.bg-overlay {
+  background: rgba(0, 0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-transition: background 0.15s linear;
+  -o-transition: background 0.15s linear;
+  transition: background 0.15s linear;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  cursor: pointer;
+  z-index: 99;
+  font-size: 30px;
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .custom-model-main:before {
+    content: "";
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    margin-right: -0px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 799px) {
+  .custom-model-inner {
+    margin-top: 45px;
+  }
+}
+
+.text-color-set {
+  color: #ffd700;
+}
+
+.btn-bg {
+  background-color: #ffd700 !important;
+}
+.mobile-nav-toggle {
+  display: none !important;
 }

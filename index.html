@@ -12,6 +12,12 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -89,11 +95,49 @@
       <h2>Welcome to Ahaan Software </h2>
     </div> -->
 
+    <div class="Click-here">Enquire Now</div>        
+<div class="custom-model-main">
+    <div class="custom-model-inner">        
+    <div class="close-btn">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+              <div class="form-section pt-3 pb-3">
+                <h3>ENQUIRY NOW FOR WEBSITE DEVELOPMENT</h3>
+                <form class="form-card pt-3" action="./send_email.php" method="POST">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="company-name">Company Name</label>
+                      <input type="text" class="form-control" id="company-name" name="company-name" placeholder="Company Name" >
+                  </div>
+                  <div class="form-group">
+                      <label for="goal">What is  your requirement ?</label>
+                      <textarea class="form-control" id="goal" name="goal" placeholder="Goal" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-bg btn-block">Get a Free Quote</button>
+              </form>
+              </div>
+            </div>
+        </div>  
+    </div>  
+    <div class="bg-overlay"></div>
+</div> 
+
     <div class="container-fluid hero-section ">
       <div class="px-5">
         <div class="row ">
           <div class="col-lg-7 ">
-            <h1 class="display-4 text-danger">#1 Website Designers & Developers in India</h1>
+            <h1 class="display-4 text-color-set">#1 Website Designers & Developers in India</h1>
             <ul class="list-unstyled ps-4">
               <li>Trusted by 250+ leading Brands</li>
               <li>Award-winning and forward-thinking web development company</li>
@@ -121,13 +165,13 @@
                 </div>
                 <div class="form-group">
                     <label for="company-name">Company Name</label>
-                    <input type="text" class="form-control" id="company-name" name="company-name" placeholder="Company Name" required>
+                    <input type="text" class="form-control" id="company-name" name="company-name" placeholder="Company Name" >
                 </div>
                 <div class="form-group">
-                    <label for="goal">What is the goal of website development or redesigning?</label>
+                    <label for="goal">What is  your requirement ?</label>
                     <textarea class="form-control" id="goal" name="goal" placeholder="Goal" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-danger btn-block">Get a Free Quote</button>
+                <button type="submit" class="btn btn-bg btn-block">Get a Free Quote</button>
             </form>
             </div>
           </div>
@@ -340,14 +384,14 @@
 
 
     <section>
-      <div class="px-5 py-5" style="background: black;">
+      <div class="px-5 py-5" style="background-color: #7a7adb; background-image: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);">
         <div class="row w-100">
           <h1 class="testimonial-head">Testimonial</h1>
             <div class="col-md-12 col-8">
                 <div id="testimonial-slider" class="owl-carousel">
                     <div class="testimonial">
                         <div class="pic">
-                            <img src="#" alt="" class="img-responsive">
+                            <img src="./assets/img/facePic.png" alt="" class="img-responsive">
                         </div>
                         <h3 class="testimonial-info">
                           Rosanna Feyerabend 
@@ -358,7 +402,7 @@
     
                     <div class="testimonial">
                         <div class="pic">
-                            <img src="#" alt="" class="img-responsive">
+                            <img src="./assets/img/facePic1.png" alt="" class="img-responsive">
                         </div>
                         <h3 class="testimonial-info">
                           Jimmy Thomas
@@ -369,7 +413,7 @@
   
                     <div class="testimonial">
                       <div class="pic">
-                          <img src="#" alt="" class="img-responsive">
+                          <img src="./assets/img/facePic2.png" alt="" class="img-responsive">
                       </div>
                       <h3 class="testimonial-info">
                         Samuel Watson
@@ -443,13 +487,13 @@
                 </div>
                 <div class="form-group">
                     <label for="company-name">Company Name</label>
-                    <input type="text" class="form-control" id="company-name" name="company-name" placeholder="Company Name" required>
+                    <input type="text" class="form-control" id="company-name" name="company-name" placeholder="Company Name" >
                 </div>
                 <div class="form-group">
-                    <label for="goal">What is the goal of website development or redesigning?</label>
+                  <label for="goal">What is  your requirement ?</label>
                     <textarea class="form-control" id="goal" name="goal" placeholder="Goal" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-danger btn-block">Get a Free Quote</button>
+                <button type="submit" class="btn btn-bg btn-block">Get a Free Quote</button>
             </form>
             </div>
           </div>
@@ -628,6 +672,15 @@ jQuery(function($) {
             autoPlay:true
         });
     });
+</script>
+<script>
+  $(".Click-here").on('click', function() {
+  $(".custom-model-main").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main").removeClass('model-open');
+});
+
 </script>
 
 </body>
